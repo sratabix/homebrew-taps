@@ -4,8 +4,10 @@ class AwsGate < Formula
   desc "Better AWS SSM Session manager CLI client"
   homepage "https://github.com/xen0l/aws-gate"
   url "https://files.pythonhosted.org/packages/30/3b/b1a7479cc04924ba434432f7980cff6329a80dbea2ae4d5e79e9816024d4/aws-gate-0.11.3.tar.gz"
-  sha256 "d9001dd61cd8f06c6ca78247a963f82d8fe0afe23e6325b78fed8f9ff48446c8"
   version "0.11.3"
+  sha256 "d9001dd61cd8f06c6ca78247a963f82d8fe0afe23e6325b78fed8f9ff48446c8"
+
+  deprecate! date: "2026-07-27", because: "is unmaintained upstream and superseded by the `awsssh` cask"
 
   depends_on "python3"
   depends_on "rust" # to properly build cryptography
