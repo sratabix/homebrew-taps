@@ -1,6 +1,6 @@
 cask "awsssh" do
-  version "0.0.4"
-  sha256 "1bc266fdff4bbd88ae964d4c2aea0d188bbf2f4181a06bac1bf6ab46192c3272"
+  version "0.0.5"
+  sha256 "e594495440c737d315731a59073cb465da6dceecb7ca3ff4d3148bef8e7efdd4"
 
   url "https://github.com/sratabix/awsssh/releases/download/v#{version}/Awsssh-#{version}.zip"
   name "Awsssh"
@@ -22,7 +22,10 @@ cask "awsssh" do
                    sudo: false
   end
 
-  zap trash: "~/Library/Application Support/Awsssh"
+  zap trash: [
+    "~/Library/Application Support/Awsssh",
+    "~/Library/Preferences/com.github.sratabix.awsssh.plist",
+  ]
 
   caveats <<~EOS
     Awsssh is a menubar app. Launch it from Applications, then use its menubar
