@@ -1,6 +1,6 @@
 cask "awsssh" do
-  version "1.0.0"
-  sha256 "f1880d89a125666d0a429121eeec4ccfb6adcefc64c0d9a289b46c224ed8d9b4"
+  version "1.0.4"
+  sha256 "77bd09feddacc0531ad8c9dcea3c7469ac25febd883ac881fe791edef8e41c1d"
 
   url "https://github.com/sratabix/awsssh/releases/download/v#{version}/Awsssh-#{version}.zip"
   name "Awsssh"
@@ -25,6 +25,7 @@ cask "awsssh" do
   zap trash: [
     "~/Library/Application Support/Awsssh",
     "~/Library/Preferences/com.github.sratabix.awsssh.plist",
+    "~/Library/WebKit/com.github.sratabix.awsssh",
   ]
 
   caveats <<~EOS
