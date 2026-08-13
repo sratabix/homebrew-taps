@@ -1,6 +1,6 @@
 cask "awsssh" do
-  version "1.0.4"
-  sha256 "77bd09feddacc0531ad8c9dcea3c7469ac25febd883ac881fe791edef8e41c1d"
+  version "1.0.5"
+  sha256 "39ccb9149bdda9cc03894ea3ce370a2df77335b8ea19fa17f7506c52656480c6"
 
   url "https://github.com/sratabix/awsssh/releases/download/v#{version}/Awsssh-#{version}.zip"
   name "Awsssh"
