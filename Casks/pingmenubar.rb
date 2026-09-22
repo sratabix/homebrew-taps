@@ -11,10 +11,8 @@ cask "pingmenubar" do
 
   app "PingMenubar.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/PingMenubar.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/PingMenubar.app"]
   end
 
   zap trash: "~/Library/Preferences/com.pingmenubar.app.plist"

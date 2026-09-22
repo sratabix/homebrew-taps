@@ -1,6 +1,6 @@
 cask "awsssh" do
-  version "1.0.5"
-  sha256 "39ccb9149bdda9cc03894ea3ce370a2df77335b8ea19fa17f7506c52656480c6"
+  version "1.0.6"
+  sha256 "e18624a07e66300470e4df163d8bdfc201a47c1befb94f713482e99550a0c5d9"
 
   url "https://github.com/sratabix/awsssh/releases/download/v#{version}/Awsssh-#{version}.zip"
   name "Awsssh"
@@ -16,10 +16,8 @@ cask "awsssh" do
   fish_completion "#{appdir}/Awsssh.app/Contents/Resources/completions/awsssh.fish"
   zsh_completion "#{appdir}/Awsssh.app/Contents/Resources/completions/_awsssh"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Awsssh.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Awsssh.app"]
   end
 
   zap trash: [
