@@ -5,23 +5,23 @@ class Multidig < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/sratabix/multidig/releases/download/v0.0.2/multidig_darwin_arm64"
-      sha256 "3f01f6ecdb3d8208ad921e559c979e1ce50fbad36c101c881efc039cda7e99f6"
+      url "https://github.com/sratabix/multidig/releases/download/v0.0.3/multidig_darwin_arm64"
+      sha256 "be059c1c621ab7a1d643a29701bf2d05cbc670622f3afc4a5fb09843c6844a14"
     end
     on_intel do
-      url "https://github.com/sratabix/multidig/releases/download/v0.0.2/multidig_darwin_amd64"
-      sha256 "cc8082863779870a320e8ad301683deade2fc90fceaca412e94a1856d6c2feeb"
+      url "https://github.com/sratabix/multidig/releases/download/v0.0.3/multidig_darwin_amd64"
+      sha256 "c4a2d75a10b6d8097019a517926f762093a110dfa270fe07471b28b8a7f7a24c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/sratabix/multidig/releases/download/v0.0.2/multidig_linux_arm64"
-      sha256 "229447a2d61c71fcaa4e5a6a2c7d72e6fddb31a9f2b0c58ea7c8490ee6cf0f11"
+      url "https://github.com/sratabix/multidig/releases/download/v0.0.3/multidig_linux_arm64"
+      sha256 "5efeb6397857888cde6ceea08acef19617e266dbab4d90981cbba1d48cafbd12"
     end
     on_intel do
-      url "https://github.com/sratabix/multidig/releases/download/v0.0.2/multidig_linux_amd64"
-      sha256 "98b7c67a60b69c84bb088b20b7dc4be7b1aa5cede1c89ae98ca5a0197847ec75"
+      url "https://github.com/sratabix/multidig/releases/download/v0.0.3/multidig_linux_amd64"
+      sha256 "88d824e52ba17cb76bdfad9352671f38078bd92b73f52eadb02ae939945a2787"
     end
   end
 

@@ -1,6 +1,6 @@
 cask "pingmenubar" do
-  version "0.0.3"
-  sha256 "e0ee5d99427431b8a97a8644363ededf8f355cc17de5b5fd73463bb803aee237"
+  version "0.0.4"
+  sha256 "07648122e5bb9e96e0fe59dfa6c1cfd80ab86345b091b80a25dbac9355b3417c"
 
   url "https://github.com/sratabix/ping-menubar/releases/download/v#{version}/PingMenubar-#{version}.zip"
   name "PingMenubar"
